@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MyTest Suite">
+    <test name="MyTest">
+        <classes>
+            <class name="com.api.test.loginTest"/>
+            <class name="com.api.test.ForgotPasswordTest"/>
+            <class name="com.api.test.getProfileTest"/>
+            <class name="com.api.test.UpdatProfileTest"/>
+        </classes>
+    </test>
+</suite>
