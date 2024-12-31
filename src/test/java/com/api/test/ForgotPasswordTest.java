@@ -2,7 +2,9 @@ package com.api.test;
 
 import com.api.base.AuthService;
 import io.restassured.response.Response;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+@Listeners(com.api.Listeners.TestListeners.class)
 
 public class ForgotPasswordTest {
     @Test(description = "Forgot Password workflow ")

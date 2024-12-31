@@ -6,8 +6,9 @@ import com.api.model.request.LoginRequest;
 import com.api.model.request.ProfileRequest;
 import io.restassured.response.Response;
 import com.api.response.LoginResponse;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-
+@Listeners(com.api.Listeners.TestListeners.class)
 public class UpdatProfileTest {
     @Test(description = "Verify update profile in API")
     public void updateProfile() {

@@ -4,8 +4,9 @@ import com.api.base.AuthService;
 import com.api.model.request.signupRequest;
 import io.restassured.response.Response;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-
+@Listeners(com.api.Listeners.TestListeners.class)
 public class AccountCreationTest {
 
 
